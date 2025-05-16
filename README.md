@@ -1,3 +1,11 @@
+# Install OpenWRT Invasion in Termux 
+Guide: https://raw.githubusercontent.com/xiv3r/termux-openwrt-invasion
+```
+apt update && apt upgrade -y && apt install wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/termux-openwrt-invasion/refs/heads/main/openwrt-invasion.sh | sh && cd openwrt-invasion
+```
+# Flash the firmware 
+
+
 <p align="right">English | <a href="README.ru.md">Русский</a></p>
 
 ## Automatic Padavan firmware builds using GitHub servers
