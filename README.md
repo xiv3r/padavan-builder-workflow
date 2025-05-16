@@ -1,7 +1,7 @@
 # Install OpenWRT Invasion in Termux 
 Guide: https://raw.githubusercontent.com/xiv3r/termux-openwrt-invasion
 ```
-apt update && apt upgrade -y && apt install wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/termux-openwrt-invasion/refs/heads/main/openwrt-invasion.sh | sh && cd openwrt-invasion
+apt update && apt upgrade -y && apt install telnet wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/termux-openwrt-invasion/refs/heads/main/openwrt-invasion.sh | sh && cd openwrt-invasion
 ```
 # Configuration
 - Reset the Xiaomi-4C router and configure it with a password of 12345678.
