@@ -3,8 +3,33 @@ Guide: https://raw.githubusercontent.com/xiv3r/termux-openwrt-invasion
 ```
 apt update && apt upgrade -y && apt install wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/termux-openwrt-invasion/refs/heads/main/openwrt-invasion.sh | sh && cd openwrt-invasion
 ```
-# Flash the firmware 
+# Configuration
+Reset the Xiaomi-4C router and configure it with a password of 12345678.
+Connect the lan cable to Xiaomi 4C Router WAN for internet.
+Then connect to the Xiaomi_***** wifi and execute the command below 👇.
+```
+python3 remote_command_execution_vulnerability.py
+```
+# From Stock to Openwrt
+Getting the root shell via telnet
+```
+telnet 192.168.31.1
+```
+login:`root`
 
+passwd:`root`
+
+# Download the Padavan
+```
+cd /tmp
+```
+```
+wget -O padavan.bin
+```
+# Flash the Firmware
+```
+mtd -r write /tmp/openwrt.bin ALL
+```
 
 <p align="right">English | <a href="README.ru.md">Русский</a></p>
 
