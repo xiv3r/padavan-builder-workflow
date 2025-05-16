@@ -33,7 +33,7 @@ mtd -r write /tmp/padavan.bin ALL
 
 <p align="right">English | <a href="README.ru.md">Русский</a></p>
 
-## Automatic Padavan firmware builds using GitHub servers
+# Automatic Padavan firmware builder using GitHub Actions 
 
 ### Usage
 
