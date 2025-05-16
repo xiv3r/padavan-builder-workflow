@@ -28,7 +28,7 @@ wget -O padavan.bin https://github.com/xiv3r/padavan-builder-workflow/raw/refs/h
 ```
 # Flash the Firmware
 ```
-mtd -r write /tmp/openwrt.bin ALL
+mtd -r write /tmp/padavan.bin ALL
 ```
 
 <p align="right">English | <a href="README.ru.md">Русский</a></p>
