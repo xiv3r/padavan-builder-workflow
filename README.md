@@ -1,4 +1,4 @@
-# Install OpenWRT Invasion in Termux 
+# Install OpenWRT Invasion for Xiaomi 4C in Termux 
 Guide: https://raw.githubusercontent.com/xiv3r/termux-openwrt-invasion
 ```
 apt update && apt upgrade -y && apt install telnet wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/termux-openwrt-invasion/refs/heads/main/openwrt-invasion.sh | sh && cd openwrt-invasion
