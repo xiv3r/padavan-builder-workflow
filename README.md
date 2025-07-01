@@ -24,7 +24,7 @@ passwd:`root`
 cd /tmp
 ```
 ```
-wget -O padavan.bin https://github.com/xiv3r/padavan-builder-workflow/raw/refs/heads/main/Full_Padavan_breed.bin
+wget -O padavan.bin https://github.com/xiv3r/padavan-builder-workflow/releases/download/6-24-2025/Full_Xiaomi_4C_Padavan_v3.4.3.9L102_build.v6.30.25.bin
 ```
 # Flash the Firmware
 ```
