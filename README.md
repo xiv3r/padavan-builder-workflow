@@ -1,5 +1,5 @@
 # Teemux Openwrt Invasion for Xiaomi 4C
-Guide: https://raw.githubusercontent.com/xiv3r/termux-openwrt-invasion
+Guide: https://github.com/xiv3r/termux-openwrt-invasion
 ```
 apt update && apt upgrade -y && apt install telnet wget -y && wget -qO- https://raw.githubusercontent.com/xiv3r/termux-openwrt-invasion/refs/heads/main/openwrt-invasion.sh | sh && cd openwrt-invasion
 ```
