@@ -1,13 +1,15 @@
-name: Build firmware
+name: Padavan Mi-4C firmware builder 
 
-on:
+on:  
+  schedule:
+    - cron: "0 2 * * 0"   # Every Sunday at 02:00 AM UTC
   workflow_dispatch:
   push:
     tags:
       - '*'
       
-      
 jobs:
+  weekly-task:
   build:
     runs-on: ubuntu-latest
     container: registry.gitlab.com/hadzhioglu/padavan-ng
