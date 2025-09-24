@@ -1,15 +1,14 @@
 name: Build firmware
 
 on:
-  schedule:
-    - cron: "0 2 * * 0"   # Every Sunday at 02:00 UTC
   workflow_dispatch:
   push:
     tags:
       - '*'
+  schedule:
+    - cron: '0 2 * * 0'
 
 jobs:
-  weekly-task:
   build:
     runs-on: ubuntu-latest
     container: registry.gitlab.com/hadzhioglu/padavan-ng
