@@ -1,13 +1,13 @@
-name: Padavan Mi-4C firmware builder 
+name: Build firmware
 
-on:  
+on:
   schedule:
-    - cron: "0 2 * * 0"   # Every Sunday at 02:00 AM UTC
+    - cron: "0 2 * * 0"   # Every Sunday at 02:00 UTC
   workflow_dispatch:
   push:
     tags:
       - '*'
-      
+
 jobs:
   weekly-task:
   build:
