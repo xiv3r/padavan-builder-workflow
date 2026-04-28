@@ -12,7 +12,7 @@
 
 - Запустите сборку: [Actions](../../actions) → [Build firmware](../../actions/workflows/build.yml) → Run workflow
 
-  ![run workflow](misc/run-workflow.webp)
+  ![run workflow](../misc/run-workflow.webp)
 
   На странице появится запущенный процесс сборки (если не появляется, просто обновите страницу). Подробности о процессе можно узнать, нажав на него.
 
@@ -20,29 +20,29 @@
 
 - Пока процесс выполняется, индикатором статуса процесса будет золотистый круг
 
-  ![workflow status progress](misc/workflow-status-in-progress.webp)
+  ![workflow status progress](../misc/workflow-status-in-progress.webp)
 
 - Если процесс завершится успешно, индикатор статуса процесса станет зелёным с галочкой
 
-  ![workflow status success](misc/workflow-status-success.webp)
+  ![workflow status success](../misc/workflow-status-success.webp)
 
   Нажмите на завершённый процесс. Архив с прошивкой будет хранится в его артефактах:
 
-  ![workflow artifacts](misc/workflow-artifacts.webp)
+  ![workflow artifacts](../misc/workflow-artifacts.webp)
 
   Лицензия прошивки не подразумевает распространения готовых сборок, поэтому архив с прошивкой для личного пользования хранится в течение 7 дней.
 
 - Если процесс завершится с ошибкой, индикатор статуса процесса станет красным с крестиком
 
-  ![workflow status fail](misc/workflow-status-fail.webp)
+  ![workflow status fail](../misc/workflow-status-fail.webp)
 
   Нажмите на завершённый процесс. Для получения подробностей об ошибке нажмите на завершившуюся с ошибкой задачу `build` слева:
 
-  ![workflow details fail](misc/workflow-details-fail.webp)
+  ![workflow details fail](../misc/workflow-details-fail.webp)
 
   Откроется отчёт о выполнении задачи:
 
-  ![workflow details get logs](misc/workflow-details-get-logs.webp)
+  ![workflow details get logs](../misc/workflow-details-get-logs.webp)
 
   Здесь сразу видно, что ошибка возникла на шаге Check firmware size — проверки размера прошивки — этот шаг отмечен красным кружком с крестиком. Далее указана конкретная причина: *Firmware size (18,492,849 bytes) exceeds max size (16,187,392 bytes) for your target device* — то есть размер собранной прошивки превышает максимально допустимый для устройства размер.
 
@@ -55,7 +55,7 @@
 
 Чтобы синхронизировать ваш форк с репозиторием-источником, просто нажмите *Sync fork* → *Update branch* в верхней части главной страницы вашего форка:
 
-![sync fork](misc/sync-fork.webp)
+![sync fork](../misc/sync-fork.webp)
 
 
 ### Дополнительные возможности
