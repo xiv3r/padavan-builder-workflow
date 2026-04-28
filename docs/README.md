@@ -6,11 +6,11 @@
 
 - [Fork this repository](https://github.com/shvchk/padavan-builder-workflow/fork), further steps should be performed in your fork
 
-- Copy your build config to [`build.config`](build.config)
+- Copy your build config to [`build.config`](../build.config)
 
   Build config template can be found in the [firmware repository](https://gitlab.com/hadzhioglu/padavan-ng/-/tree/master/trunk/configs/templates)
 
-- Run the build process: [Actions](../../actions) → [Build firmware](../../actions/workflows/build.yml) → Run workflow
+- Run the build process: [Actions](../../../actions) → [Build firmware](../../../actions/workflows/build.yml) → Run workflow
 
   ![run workflow](misc/run-workflow.webp)
 
@@ -60,9 +60,9 @@ To sync your fork with its origin repository, just click *Sync fork* → *Update
 
 ### Advanced usage
 
-You can set the firmware repository, branch, specific tag or commit in the [`variables`](variables) file.
+You can set the firmware repository, branch, specific tag or commit in the [`variables`](../variables) file.
 
-In the [`variables`](variables) file you can also specify which themes you want to install by uncommenting theme names in the `PADAVAN_THEMES` variable. Themes repository can be set with the `PADAVAN_THEMES_REPO` variable.
+In the [`variables`](../variables) file you can also specify which themes you want to install by uncommenting theme names in the `PADAVAN_THEMES` variable. Themes repository can be set with the `PADAVAN_THEMES_REPO` variable.
 
 You can create a `pre-build.sh` script with any custom commands, which will be executed just before build process. By that time firmware source code is already downloaded, so you can add or change anything in it.
 

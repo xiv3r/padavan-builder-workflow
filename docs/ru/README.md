@@ -6,11 +6,11 @@
 
 - [Форкните репозиторий](https://github.com/shvchk/padavan-builder-workflow/fork), дальнейшие шаги выполняйте в своём форке
 
-- Скопируйте свой конфиг сборки в [`build.config`](build.config)
+- Скопируйте свой конфиг сборки в [`build.config`](../../build.config)
 
   Шаблон конфига для вашего устройства можно взять в [репозитории прошивки](https://gitlab.com/hadzhioglu/padavan-ng/-/tree/master/trunk/configs/templates)
 
-- Запустите сборку: [Actions](../../actions) → [Build firmware](../../actions/workflows/build.yml) → Run workflow
+- Запустите сборку: [Actions](../../../../actions) → [Build firmware](../../../../actions/workflows/build.yml) → Run workflow
 
   ![run workflow](../misc/run-workflow.webp)
 
@@ -60,9 +60,9 @@
 
 ### Дополнительные возможности
 
-Вы можете указать репозиторий прошивки, ветку, конкретный тег или коммит в файле [`variables`](variables).
+Вы можете указать репозиторий прошивки, ветку, конкретный тег или коммит в файле [`variables`](../../variables).
 
-В файле [`variables`](variables) также можно указать необходимые для установки темы, раскомментировав их в переменной `PADAVAN_THEMES`. Репозиторий с темами можно указать в переменной `PADAVAN_THEMES_REPO`.
+В файле [`variables`](../../variables) также можно указать необходимые для установки темы, раскомментировав их в переменной `PADAVAN_THEMES`. Репозиторий с темами можно указать в переменной `PADAVAN_THEMES_REPO`.
 
 Вы можете создать скрипт `pre-build.sh` с любыми кастомными командами, который будет выполнен непосредственно перед процессом сборки. К тому времени исходный код прошивки уже загружен, так что вы можете добавлять в него или изменять в нём что угодно.
 
